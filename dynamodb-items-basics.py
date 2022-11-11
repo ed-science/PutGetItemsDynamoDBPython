@@ -24,7 +24,7 @@ if __name__ == "__main__":
     # put item into db
     dynamodb_client.put_item(TableName = table_name, Item= item_scarface)
 
-    
+
     # get item
     resp = dynamodb_client.get_item(TableName = table_name, Key = item_get)
     print(resp)
